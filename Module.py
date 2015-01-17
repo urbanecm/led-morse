@@ -71,11 +71,12 @@ def charToCode(zpracovat):
 def codeToText(code):
 	array = list(code)
 	delka = len(array)
-	text = []
+	texta = []
 	i = 0
 	while (i < delka):
-		text.append(codeToChar(array[i]))
+		texta.append(codeToChar(array[i]))
 		i = i + 1
+	text = ''.join(texta)
 	return text
 
 def codeToChar(code):
