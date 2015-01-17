@@ -68,3 +68,22 @@ def charToCode(zpracovat):
 	elif (char == "Z"):
 		vratit = "--.."
 	return vratit
+def codeToText(code):
+	array = list(code)
+	delka = len(array)
+	text = []
+	i = 0
+	while (i < delka):
+		text.append(codeToChar(array[i]))
+		i = i + 1
+	return text
+
+def codeToChar(code):
+	if (code == ".-"):
+		vratit = "A"
+	elif (code == "-..."):
+		vratit = "B"
+	elif (code == "-.-."):
+		vratit = "C"
+	elif (code == "-.."):
+		vratit = "D"
