@@ -87,3 +87,50 @@ def codeToChar(code):
 		vratit = "C"
 	elif (code == "-.."):
 		vratit = "D"
+	elif (code == "."):
+		vratit = "E"
+	elif (code == "..-."):
+		vratit = "F"
+	elif (code == "--."):
+		vratit = "G"
+	elif (code == "....")
+		vratit = "H":
+	elif (code == "----"):
+		vratit = "CH"
+	elif (code == ".."):
+		vratit = "I"
+	elif (code == ".---"):
+		vratit = "J"
+	elif (code == "-.-"):
+		vratit = "K"
+	elif (code == ".-.."):
+		vratit = "L"
+	elif (code == "--"):
+		vratit = "M"
+	elif (code == "-."):
+		vratit = "N"
+	elif (code == "---"):
+		vratit = "O"
+	elif (code == ".--.")
+		vratit = "P"
+	elif (code == "--.-"):
+		vratit = "Q"
+	elif (code == ".-."):
+		vratit = "R"
+	elif (code == "..."):
+		vratit = "S"
+	elif (code == "-"):
+		vratit = "T"
+	elif (code == "..-"):
+		vratit = "U"
+	elif (code == "...-"):
+		vratit = "V"
+	elif (code == ".--"):
+		vratit = "W"
+	elif (code == "-..-"):
+		vratit = "X"
+	elif (code == "-.--"):
+		vratit = "Y"
+	elif (code == "--.."):
+		vratit = "Z"
+	return vratit
