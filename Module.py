@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 
 import sys
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)
+pin = 18
+GPIO.setup(pin, GPIO.OUT)
 
 def textToCode(text):
 	array = list(text)
@@ -140,8 +146,22 @@ def readCode():
 	buffer = []
 	while True:
 		line = sys.stdin.readline().rstrip('\n')
-		if (line == "konec"):
+		if (line == ""):
 			break
 		else:
 			buffer.append(line)
 	return buffer
+def signalizeChar(code):
+	for cmd in code:
+		if (cmd == "."):
+			signalize(0.15)
+		elif (cmd == "-"):
+			signalize(1)
+		else:
+			print "Error"
+			sys.exit()
+def signalize(cas):
+	GPIO.output(pin, False)
+	time.sleep(cas)
+	GPIO.output(pin, True)
+	time.sleep(0.7)

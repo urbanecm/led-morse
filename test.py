@@ -2,6 +2,9 @@
 
 import Module
 
-char = raw_input("Znak/text: ")
+text = raw_input("Text: ")
 
-print Module.textToCode(char)
+codes = Module.textToCode(text)
+
+for code in codes:
+	Module.signalizeChar(code)

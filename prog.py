@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import Module
+import sys
 
 try:
 	while True:
@@ -23,6 +24,8 @@ try:
 				for code in codes:
 					print code
 			elif (action == "2"):
+				print "Zadejte text psaný morseovkou (jeden znak, jeden řádek)"
+				print "Zadávání ukončete stiskem enter"
 				code = Module.readCode()
 				text = Module.codeToText(code)
 				print "Text převedený z morseovky: ", text
@@ -31,9 +34,7 @@ try:
 			else:
 				print "Zvolena nesprávná akce"
 		elif (action == "2"):
-			code = Module.readCode()
-			text = Module.codeToText(code)
-			print "Text převedený z morseovky je: ", text
+			pass
 		elif (action == "3"):
 			break
 		else:
