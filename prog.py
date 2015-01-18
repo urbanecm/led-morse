@@ -25,13 +25,7 @@ tr :
 				for code in codes:
 					print code
 			elif (action == "2"):
-				buffer = []
-				while True:
-					line = sys.stdin.readline().rstrip('\n')
-					if (line == "konec"):
-						break
-					else:
-						buffer.append(line)
+				pass
 			elif (action == "3)"):
 				continue
 			else:
