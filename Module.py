@@ -69,12 +69,11 @@ def charToCode(zpracovat):
 		vratit = "--.."
 	return vratit
 def codeToText(code):
-	array = list(code)
-	delka = len(array)
+	delka = len(code)
 	texta = []
 	i = 0
 	while (i < delka):
-		texta.append(codeToChar(array[i]))
+		texta.append(codeToChar(code[i]))
 		i = i + 1
 	text = ''.join(texta)
 	return text
@@ -94,8 +93,8 @@ def codeToChar(code):
 		vratit = "F"
 	elif (code == "--."):
 		vratit = "G"
-	elif (code == "....")
-		vratit = "H":
+	elif (code == "...."):
+		vratit = "H"
 	elif (code == "----"):
 		vratit = "CH"
 	elif (code == ".."):
@@ -112,7 +111,7 @@ def codeToChar(code):
 		vratit = "N"
 	elif (code == "---"):
 		vratit = "O"
-	elif (code == ".--.")
+	elif (code == ".--."):
 		vratit = "P"
 	elif (code == "--.-"):
 		vratit = "Q"
