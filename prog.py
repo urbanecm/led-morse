@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import Module
-import sys
 
-
-tr :
+try:
 	while True:
 		print "Zvolte činnost: "
 		print "1) Převádění"
@@ -25,13 +23,17 @@ tr :
 				for code in codes:
 					print code
 			elif (action == "2"):
-				pass
+				code = Module.readCode()
+				text = Module.codeToText(code)
+				print "Text převedený z morseovky: ", text
 			elif (action == "3)"):
 				continue
 			else:
 				print "Zvolena nesprávná akce"
 		elif (action == "2"):
-			pass
+			code = Module.readCode()
+			text = Module.codeToText(code)
+			print "Text převedený z morseovky je: ", text
 		elif (action == "3"):
 			break
 		else:

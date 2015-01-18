@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 def textToCode(text):
 	array = list(text)
 	delka = len(array)
@@ -142,3 +144,4 @@ def readCode():
 			break
 		else:
 			buffer.append(line)
+	return buffer
