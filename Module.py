@@ -134,3 +134,11 @@ def codeToChar(code):
 	elif (code == "--.."):
 		vratit = "Z"
 	return vratit
+def readCode():
+	buffer = []
+	while True:
+		line = sys.stdin.readline().rstrip('\n')
+		if (line == "konec"):
+			break
+		else:
+			buffer.append(line)
