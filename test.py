@@ -4,7 +4,4 @@ import Module
 
 text = raw_input("Text: ")
 
-codes = Module.textToCode(text)
-
-for code in codes:
-	Module.signalizeChar(code)
+Module.signalizeWord(text)

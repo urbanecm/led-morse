@@ -151,6 +151,11 @@ def readCode():
 		else:
 			buffer.append(line)
 	return buffer
+def signalizeWord(word):
+	codes = textToCode(word)
+	for code in codes:
+		signalizeChar(code)
+		time.sleep(2)
 def signalizeChar(code):
 	for cmd in code:
 		if (cmd == "."):
