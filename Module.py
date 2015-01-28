@@ -5,6 +5,7 @@
 import sys
 import RPi.GPIO as GPIO
 import time
+import Download
 
 GPIO.setmode(GPIO.BCM)
 pin = 18
@@ -188,5 +189,3 @@ def splitText(text):
 		else:
 			word.append(char)
 	return array
-def removeDiakritika():
-	pass
