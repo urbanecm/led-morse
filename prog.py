@@ -34,7 +34,25 @@ try:
 			else:
 				print "Zvolena nesprávná akce"
 		elif (action == "2"):
-			pass
+			print "1) Příjem"
+			print "2) Vysílání"
+			print "3) Zpět"
+			action = raw_input("Činnost:")
+			if action == "1":
+				print "Zadejte přijaté kódy"
+				print "Zadávání ukončete stisknutím klávesy enter"
+				codes = Module.readCode()
+				text = Module.codeToText(codes)
+				print "Přijatý text: " + text
+			elif action == "2":
+				text = raw_input("Text k signalizaci: ")
+				print "Signalizuji..."
+				Module.signalizeText(text)
+				print "Odsignalizováno"
+			elif action == "3":
+				continue
+			else:
+				print "Zvolena nesprávná akce"
 		elif (action == "3"):
 			break
 		else:
