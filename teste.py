@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
-import Module
+import RPi.GPIO as  GPIO
+import time
 
-Module.signalize(1)
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(21, GPIO.OUT)
+
+GPIO.output(21, False)
+time.sleep(60)
+GPIO.output(21, True)

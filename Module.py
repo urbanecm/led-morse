@@ -170,3 +170,19 @@ def signalize(cas):
 	time.sleep(cas)
 	GPIO.output(pin, True)
 	time.sleep(0.7)
+def signalizeText(text):
+	array = splitText(text)
+	for word in array:
+		signalizeWord(word)
+		time.sleep(4)
+def splitText(text):
+	array = []
+	word = []
+	text += " "
+	for char in text:
+		if char == " ":
+			array.append("".join(word))
+			word = []
+		else:
+			word.append(char)
+	return array

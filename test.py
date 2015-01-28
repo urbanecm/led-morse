@@ -2,6 +2,4 @@
 
 import Module
 
-text = raw_input("Text: ")
-
-Module.signalizeWord(text)
+print Module.splitText("abc abc abc")
