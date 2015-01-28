@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 
 import sys
 import RPi.GPIO as GPIO
@@ -186,3 +188,5 @@ def splitText(text):
 		else:
 			word.append(char)
 	return array
+def removeDiakritika():
+	pass
