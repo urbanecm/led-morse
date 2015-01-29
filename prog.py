@@ -19,7 +19,7 @@ try:
 			print "3) Zpět"
 			action = raw_input("Činnost: ")
 			if (action == "1"):
-				text = raw_input("Zadejte text k převedení do morseovky (bez diakritiky): ")
+				text = raw_input("Zadejte text k převedení do morseovky: ")
 				codes = Module.textToCode(text)
 				for code in codes:
 					print code
