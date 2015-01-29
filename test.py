@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import Module
+import Download
 
-print Module.removeHackyCarky("příliš žluťoučký kůň")
+print Download.deaccent("Příliš žluťoučký kůň")
