@@ -12,7 +12,8 @@ pin = 18
 GPIO.setup(pin, GPIO.OUT)
 
 def textToCode(text):
-	array = list(text)
+	work = Download.deaccent(text)
+	array = list(work)
 	delka = len(array)
 	morse = []
 	i = 0

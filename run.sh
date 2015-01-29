@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./run-as-normal-user ./prog.py
+./run-as-normal-user.sh ./prog.py
