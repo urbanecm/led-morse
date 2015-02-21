@@ -7,6 +7,7 @@ import RPi.GPIO as GPIO
 import time
 import Download
 
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 pin = 18
 GPIO.setup(pin, GPIO.OUT)
